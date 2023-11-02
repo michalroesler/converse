@@ -1,0 +1,114 @@
+/*color_pallete: https://colorhunt.co/palette/557571d49a89f7d1baf4f4f4			*/
+/*awesome CSS border property tutorial: https://youtu.be/d_3fKSHwq_g				*/
+:root{
+	--background: #F4F4F4;
+	--second:	  #F7D1BA;
+	--lnkcolor:	  #D49A89;
+	--fntcolor:	  #557571;
+	--xtracolor:  #E96479;
+	  }
+
+body {
+	background-color: var(--background);
+	color: black;
+	font-family: sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	text-align: left;
+	line-height: 1.3;
+	height: 100%;
+	}	
+
+article {
+	border: 10px solid black;
+	/*border-radius: 60px;									*/
+   }
+
+header {
+	font-size: 16px;
+   text-transform: uppercase;
+	}
+
+h1 {
+	font-size: 32px;
+	text-transform: uppercase;
+	}
+
+h2 {
+	font-size: 26px;
+	text-transform: uppercase;
+	text-align: center;
+	background-color: var(--second);
+	}
+
+h3 {
+	font-size: 26px;
+	text-transform: uppercase;
+	}
+
+p#price {
+	font-size: 30px;
+	}
+
+p#shipping {
+	font-size: 14px;
+	color: var(--fntcolor);
+	font-weight: 800;
+	text-transform: uppercase;
+	}
+
+a:link,
+a:visited {
+	color: var(--lnkcolor);
+	color: black;
+	text-decoration: underline;
+	}
+
+a:hover,
+a:active {
+	color: black;
+	color: var(--lnkcolor);
+	text-decoration: none;
+	}
+
+.stndrd_image {
+	width: 400px;
+   /*border-radius: 50px;										*/
+   }
+
+li {
+	list-style: square;
+	}
+
+li:nth-child(4) {
+	font-weight: bold;
+	color: orangered;
+	}
+
+button {
+	background-color: black;
+	color: var(--background);
+	border: none;
+	font-size: 26px;
+	text-transform: uppercase;
+	cursor: pointer;
+	}
+
+button:hover {
+	background-color: var(--background);
+	color: var(--fntcolor);
+	font-size: 26px;
+	font-weight: 800;
+	}
+
+footer {
+	text-align: center;
+	font-size: 12px;
+	font-style: normal;
+   font-weight: normal;
+   }		
+
+
+/*     float: left;				*/
+/*     margin-right: 30px;		*/ 
+/*		 margin-left:  30px;		*/	
