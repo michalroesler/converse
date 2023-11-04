@@ -1,5 +1,6 @@
 /*color_pallete: https://colorhunt.co/palette/557571d49a89f7d1baf4f4f4			*/
 /*awesome CSS border property tutorial: https://youtu.be/d_3fKSHwq_g				*/
+
 :root{
 	--background: #F4F4F4;
 	--second:	  #F7D1BA;
@@ -8,15 +9,25 @@
 	--xtracolor:  #E96479;
 	  }
 
+* {
+margin: 0 0 0 0;		/* top right bottom left - global margin reset */
+padding: 0 0 0 0;		/* top right bottom left - global padding reset */
+}
+
 body {
 	background-color: var(--background);
 	color: black;
+	max-width: 1000px;
+	margin: 1px auto 1px;		/* top, right and left, bottom */
+
 	font-family: sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	text-align: left;
-	line-height: 1.3;
+	line-height: 1.3em;
 	height: 100%;
+
+	outline: 1px solid pink;
 	}	
 
 article {
