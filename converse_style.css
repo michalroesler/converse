@@ -15,10 +15,11 @@ padding: 0 0 0 0;		/* top right bottom left - global padding reset */
 }
 
 body {
+	font-size: 16px;
 	background-color: var(--background);
 	color: black;
 	max-width: 1000px;
-	margin: 1px auto 1px;		/* top, right and left, bottom */
+	margin: 10px auto 10px;		/* top, right and left, bottom */
 
 	font-family: sans-serif;
 	font-style: normal;
@@ -31,13 +32,15 @@ body {
 	}	
 
 article {
-	border: 10px solid black;
+	border: 7px solid black;
 	/*border-radius: 60px;									*/
    }
 
 header {
 	font-size: 16px;
    text-transform: uppercase;
+	padding: 1.2em 0 1.2em;		/* top, right and left, bottom */
+	outline: 1px solid pink;
 	}
 
 h1 {
@@ -50,48 +53,91 @@ h2 {
 	text-transform: uppercase;
 	text-align: center;
 	background-color: var(--second);
+	line-height: 1.5em;
 	}
 
 h3 {
 	font-size: 26px;
 	text-transform: uppercase;
+	padding: 1.5rem 1.2rem 0.5rem;	/*top, right and left, bottom */
+	margin: 1rem 0 0 0;					/*top, right, bottom, left */
 	}
 
-p#price {
+#price {
 	font-size: 30px;
+	padding: 0.5rem 1.2rem 0.7rem		/*top, right and left, bottom */
 	}
 
-p#shipping {
+#shipping {
 	font-size: 14px;
 	color: var(--fntcolor);
 	font-weight: 800;
 	text-transform: uppercase;
+	padding: 0.5rem 1.2rem 0.7rem		/*top, right and left, bottom */
 	}
 
-a:link,
-a:visited {
+p {
+	padding: 0.5rem 1.2rem 0.7rem;	/*top, right and left, bottom */
+	outline: 1px solid pink;
+	}
+
+article a {
+	text-decoration: underline;
+	padding: 0 1.2rem 1rem;				/*top, right and left, bottom */
+	margin: 0 0 1rem 0;					/*top, right, bottom, left */
+}
+
+a:link {
 	color: var(--lnkcolor);
 	color: black;
 	text-decoration: underline;
-	}
+	padding: 0 1.2rem 1rem;				/*top, right and left, bottom */
+	margin: 0 0 1rem 0;					/*top, right, bottom, left */
+	}						/* Margins don't work on small elements like anchors.
+								I need to try something else. */
 
-a:hover,
+a:visited {
+	color: var(--lnkcolor);
+	color: black;
+	}						/* Margins don't work on small elements like anchors.
+								I need to try something else. */
+
+a:hover {
+	color: black;
+	color: var(--lnkcolor);
+	text-decoration: none;
+	padding: 0 1.2rem 1rem;				/*top, right and left, bottom */
+	}						/* Margins don't work on small elements like anchors.
+								I need to try something else. */
+
 a:active {
 	color: black;
 	color: var(--lnkcolor);
 	text-decoration: none;
-	}
+	padding: 0 1.2rem 1rem;				/*top, right and left, bottom */
+	}						/* Margins don't work on small elements like anchors.
+								I need to try something else. */
 
 .stndrd_image {
 	width: 400px;
    /*border-radius: 50px;										*/
    }
 
-li {
-	list-style: square;
+.since1917 {
+	padding: 0.5rem 1.2rem 1rem 1.2rem;		/*top, right, bottom, left */
 	}
 
-li:nth-child(4) {
+.details_list {
+	margin: 0 0 0 2.0rem;						/*top, right, bottom, left */
+	}
+
+.details_list li {
+	list-style: square;
+	padding: 0 1.2rem 0 1.2rem;				/*top, right, bottom, left */ 		
+	margin: 0 0 0.4rem 0;						/*top, right, bottom, left */
+	}
+
+.details_list li:nth-child(4) {
 	font-weight: bold;
 	color: orangered;
 	}
@@ -99,10 +145,14 @@ li:nth-child(4) {
 button {
 	background-color: black;
 	color: var(--background);
-	border: none;
+	border: none;	
 	font-size: 26px;
 	text-transform: uppercase;
 	cursor: pointer;
+
+	padding: 0.3em 1em 0.3em;					/*top, right and left, bottom */
+	width: 100%;
+	border-top: 7px solid black;
 	}
 
 button:hover {
